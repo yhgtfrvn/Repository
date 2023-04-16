@@ -23,7 +23,8 @@
             }
         },
         {   
-            "listen": "/etc/caddy/vless",
+            "listen": "127.0.0.1",
+            "port": 65678,
             "protocol": "vless",
             "settings": {
                 "clients": [
