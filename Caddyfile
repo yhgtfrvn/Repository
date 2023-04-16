@@ -33,7 +33,7 @@ header Connection *Upgrade*
 header Upgrade    websocket
 path /$AUUID-vless
 }
-reverse_proxy @websocket_xray_vless 127.0.0.1:65678
+reverse_proxy @websocket_xray_vless unix//etc/caddy/vless
 
 @websocket_xray_trojan {
 header Connection *Upgrade*
